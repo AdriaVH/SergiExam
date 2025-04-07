@@ -15,9 +15,9 @@ try {
     Sedan sedan = new Sedan("Opel", "Corsa", "Electric", 2015, 40);
     SUV fakeSUV = new SUV("Seat", "Leon", "Petrol", 2001, "4x4");
 
-    sergiMotors.getRegisteredCars();
-    sergiMotors.carsDetails();
-    sergiMotors.madeAfterSpecificYear(2010);
+    System.out.println(sergiMotors.getRegisteredCars());
+    System.out.println(sergiMotors.carsDetails());
+    System.out.println(sergiMotors.madeAfterSpecificYear(2010));
 
 } catch (ManufacturingException e) {
     System.out.println(e.getMessage());
