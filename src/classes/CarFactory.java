@@ -17,4 +17,10 @@ return getRegisteredCars().stream().filter( car -> car.getManufacturedYear() > y
     public List<Car> getRegisteredCars() {
         return new ArrayList<Car>(registeredCars);
     }
+    public void addCar (Car car){
+        registeredCars.add(car);
+    }
+    public void removeCar (Car car) {
+        registeredCars.remove(car);
+    }
 }
